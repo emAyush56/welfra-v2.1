@@ -1,0 +1,131 @@
+:root{
+    --clr-error: #cc3333;
+}
+
+body{
+    --border-radius: 1.125rem;
+    height: 100vh;
+    background: var(--gradient-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ls-form{
+    padding: 2.5rem;
+    margin: 1rem;
+    background: #fff;
+    width: 450px;
+    border-radius: var(--border-radius);
+    box-shadow: 0.4rem 1.5rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.ls-form .title{
+    font-size: 1.2rem;    
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ls-form .form-input-group{
+    margin-bottom: 1rem;
+}
+
+.ls-form .form-input{
+    font: 500 0.9rem 'Montserrat', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    outline: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.ls-form .form-input:focus{
+    background: #fff;
+}
+
+.ls-form .btn{
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.ls-form .desc{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.ls-create-ac{
+    padding: 1.5rem;
+    margin: 1rem;
+    background: #fff;
+    width: 450px;
+    border-radius: var(--border-radius);
+    box-shadow: 0.4rem 1.5rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.ls-create-ac .desc{
+    text-align: center;
+}
+
+.ls-form a, .ls-create-ac a{
+    color: var(--primary-gradient-color);
+    font-weight: 600;
+}
+
+.ls-form a:hover, .ls-create-ac a:hover{
+    color: var(--secondary-gradient-color);
+    transition: 0.3s;
+}
+
+.ls-form .desc, .ls-create-ac .desc{
+    font-size: 0.9rem;
+}
+
+.form-message{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.form-input-message{
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.form-message-error{
+    color: var(--clr-error);
+}
+
+@media (max-width: 991px){
+    .ls-form, 
+    .ls-create-ac{
+        width: 350px;
+    }
+
+    .ls-form .desc, .ls-create-ac .desc{
+        font-size: 0.8rem;
+    }
+
+    .ls-form .title{
+        font-size: 1.1rem;
+    }
+    
+    .ls-form .form-input{
+        font-size: 0.9rem;
+    }
+}
