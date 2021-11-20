@@ -42,6 +42,6 @@ body{
     }
 }
 
-/* .demat .aff-links a{
-    width: 100%;
-} */
+.demat .aff-links a{
+    /* width: 100%; */
+}
