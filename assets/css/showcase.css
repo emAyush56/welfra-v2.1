@@ -228,7 +228,7 @@
     border-collapse: collapse;
     margin: auto;
     font-size: 1.2rem;
-    min-width: 100%;
+    min-width: 90%;
     border-radius: 0.8rem;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
@@ -243,7 +243,7 @@
 
 .main-table-content th,
 .main-table-content td {
-    padding: 18px 40px;
+    padding: 18px 60px;
 }
   
 .main-table-content tbody tr {
@@ -262,7 +262,7 @@
 .icon-btn{
     font-size: 1rem;
     color: white;
-    margin-left: 0.7rem;
+    margin-right: 0.7rem;
     padding: 0.5rem;
     background: var(--primary-gradient-color);
     border-radius: 50%;
@@ -325,7 +325,7 @@
         font-size: 1.2rem;
     }
 
-    .sap-table{
+    .sap-table-data{
         overflow-x: scroll;
     }
 
@@ -344,12 +344,12 @@
     .main-table-content td{
         display: block;
         width: 100%;
-    }
+    }*/
 
     .main-table-content th,
     .main-table-content td {
-    padding: 15px 40px;
-    } */
+    padding: 15px 30px;
+    }
 
     /* .main-table-content tbody tr td{
         text-align: right;
