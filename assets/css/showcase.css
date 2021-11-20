@@ -100,7 +100,7 @@
 
 .social-col{
     min-width: 30%;
-    padding: 1.6rem;
+    padding: 1.2rem;
     border-radius: 1.125rem;
     box-shadow: 0.4rem 1.5rem 4rem rgba(64, 203, 241, 0.12);
     display: flex;
@@ -113,6 +113,10 @@
     color: var(--primary-main-color);
     transition: 0.2s;
     margin-bottom: 0.8rem;
+}
+
+.social-col .desc{
+    font-size: 1rem;
 }
 
 .social-col .icon-box-trans{
@@ -153,7 +157,8 @@
     }
 
     .social-col .icon-box-trans{
-        font-size: 2rem;
+        display: none;
+        /* font-size: 2rem; */
     }
 }
 
@@ -219,15 +224,13 @@
 
 /* MAIN TABLE DESIGN */
 
-
-
 .main-table-content{
     border-collapse: collapse;
     margin: auto;
     font-size: 1.2rem;
-    width: 100%;
+    min-width: 100%;
     border-radius: 0.8rem;
-    /* overflow: scroll; */
+    overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -365,7 +368,7 @@
         font-weight: 600;
         color: var(--primary-main-color); */
     }
-
+    
     .icon-btn{
         font-size: 0.9rem;
     }
