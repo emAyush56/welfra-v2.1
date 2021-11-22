@@ -268,10 +268,10 @@
 }
 
 .icon-btn {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding: 0.4rem;
   color: white;
   margin-right: 0.7rem;
-  padding: 0.5rem;
   background: var(--primary-gradient-color);
   border-radius: 50%;
   border: 2px solid var(--primary-gradient-color);
@@ -491,6 +491,6 @@
   color: white;
 }
 
-.courses-pricing #end-col .icon-btn:active::before {
+/* .courses-pricing #end-col .icon-btn:active::before {
   content: "\f068";
-}
+} */
