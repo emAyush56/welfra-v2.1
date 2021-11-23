@@ -283,9 +283,9 @@
   color: var(--primary-gradient-color);
 }
 
-.icon-btn:active::before {
+/* .icon-btn:active::before {
   content: "\f068";
-}
+} */
 
 .sap-total {
   margin: 2.5rem 0;
@@ -452,12 +452,36 @@
   letter-spacing: 1px;
 }
 
+.courses-pricing ul ul {
+  margin-left: 2rem;
+  padding-top: 1rem;
+}
+
+.courses-pricing ul ul li i {
+  /* font-size: 1rem; */
+}
+
 .courses-pricing ul li {
   padding-bottom: 1rem;
 }
 
 .courses-pricing .features i {
   margin-right: 0.5rem;
+}
+
+.courses-pricing .features .features-highlight {
+  color: #0050cf;
+  font-weight: 800;
+}
+
+.courses-pricing .features .features-highlight-contrast {
+  color: white;
+  font-weight: 800;
+}
+
+.features-highlight,
+.features-highlight-contrast {
+  margin-bottom: 1.2rem;
 }
 
 .courses-pricing a {
@@ -490,7 +514,3 @@
   background: transparent;
   color: white;
 }
-
-/* .courses-pricing #end-col .icon-btn:active::before {
-  content: "\f068";
-} */
