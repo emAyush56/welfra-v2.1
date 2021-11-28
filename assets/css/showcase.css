@@ -287,6 +287,47 @@
   content: "\f068";
 } */
 
+.sap-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sap-checkbox__input{
+  display: none;
+}
+
+.sap-checkbox__box{
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 2px solid var(--primary-gradient-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.sap-checkbox__box::after{
+  content: '\2714';
+  font-size: 0.9rem;
+  color: white;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+
+
+.sap-checkbox__input:checked + .sap-checkbox__box{
+  background: var(--primary-gradient-color);
+  border-color: var(--primary-gradient-color);
+}
+
+.sap-checkbox__input:checked + .sap-checkbox__box::after{
+  transform: scale(1);
+}
+
 .sap-total {
   margin: 2.5rem 0;
   padding: 1.5rem 1rem;
@@ -452,14 +493,20 @@
   letter-spacing: 1px;
 }
 
+@media (max-width: 991px) {
+  .courses-pricing ul {
+    font-size: 1rem;
+  }
+}
+
 .courses-pricing ul ul {
   margin-left: 2rem;
   padding-top: 1rem;
 }
 
-.courses-pricing ul ul li i {
-  /* font-size: 1rem; */
-}
+/* .courses-pricing ul ul li i {
+  font-size: 1rem;
+} */
 
 .courses-pricing ul li {
   padding-bottom: 1rem;
