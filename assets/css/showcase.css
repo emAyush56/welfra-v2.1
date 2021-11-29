@@ -197,6 +197,14 @@
 }
 
 @media (max-width: 991px) {
+  .showcase-s-ad .big-wrapper {
+  background: linear-gradient(
+      to top right,
+      rgba(1, 27, 69, 1),
+      rgba(0, 80, 207, 1)
+    );
+}
+
   .s-ad-pricing {
     margin: 3rem 0;
   }
@@ -451,6 +459,13 @@
 }
 
 @media (max-width: 991px) {
+  .showcase-s-courses .big-wrapper {
+  background: linear-gradient(
+      to top right,
+      rgba(1, 27, 69, 1),
+      rgba(0, 80, 207, 1)
+    );
+  }
   .courses-pricing .container {
     flex-direction: column;
   }
